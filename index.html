@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Carrito de compras</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="principal">
+            <h1 id="titulo">ECOMMERCE</h1>
+            <br>
+            <form id="formulario">
+                <h2>Suscribite!</h2>
+                <label>Nombre:</label>
+                <input id="nombre" type="text" placeholder="aqui escribe tu nombre">
+                <label>Email:</label>
+                <input id="email" type="email" placeholder="sofi@....">
+                <small id="mensaje"></small>
+                </label>
+                <input type="submit" value="enviar" class="btn btn-success" />
+                <input type="button" value="borrar" class="btn btn-danger" onclick="borrarCampos()">
+            </form>
+            </article>
+            <br>
+            <article id="contenedorProductos" class="row">
+            </article>
+
+            <br>
+            <section>
+                <h4>Tu carrito:</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablabody">
+                        <!-- aqui tabla carrito -->
+                    </tbody>
+
+                </table>
+                <h4 id="total">Total a pagar $:</h4>
+                <br>
+            </label>
+            <input type="submit" value="confirar el pago" class="btn btn-success" />
+            <input type="button" value="borrar" class="btn btn-danger">
+            </section>
+        </section>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="productos.js"></script>
+    <script src="codigo1.js"></script>
+</body>
+
+</html>
